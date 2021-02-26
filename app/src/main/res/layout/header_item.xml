@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:elevation="@dimen/view_20"
+    app:cardCornerRadius="0dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:cardElevation="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+        <TextView
+
+            android:layout_centerVertical="true"
+           android:text="Notes"
+            android:textStyle="bold"
+            android:id="@+id/txt_title"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="@dimen/view_200dp"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:textSize="@dimen/view_20"
+            android:layout_height="@dimen/view_50" />
+
+
+        <TextView
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:padding="@dimen/view_10"
+            android:visibility="gone"
+            android:src="@drawable/side_menu"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/drawer_icon"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_14"
+            android:gravity="center"
+            android:layout_height="@dimen/view_45" />
+
+
+            <TextView
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:padding="@dimen/view_10"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="New"
+                android:textColor="@color/white"
+                android:textSize="@dimen/txt_14"
+                android:id="@+id/new_note"
+                android:gravity="center"
+                android:layout_height="@dimen/view_50" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

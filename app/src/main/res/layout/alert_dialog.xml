@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_marginBottom="5dp"
+    android:paddingBottom="@dimen/view_10"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_40"
+        android:layout_gravity="right"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:id="@+id/linear"
+        >
+
+        <ImageView
+            android:id="@+id/cross"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="@dimen/view_5"
+            android:src="@drawable/cross_white" />
+    </LinearLayout>
+
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are You Sure!"
+        android:id="@+id/title"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/view_10"
+        android:padding="@dimen/view_5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cat_name"
+        android:text="You want to delete this note?"
+        android:padding="@dimen/view_10"
+        android:layout_marginRight="@dimen/view_10"
+        android:layout_marginLeft="@dimen/view_10"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:layout_gravity="center"
+
+
+
+        />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/view_10"
+        android:layout_marginRight="5dp">
+
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="@color/white"
+            android:id="@+id/save"
+            android:layout_marginLeft="@dimen/view_10"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"/>
+        <Button
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="@color/white"
+            android:id="@+id/cancel"
+            android:layout_marginRight="@dimen/view_10"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:enabled="true"/>
+    </LinearLayout>
+</LinearLayout>

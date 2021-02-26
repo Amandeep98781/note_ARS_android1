@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewActivity">
+
+    <include layout="@layout/header_item"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/view_10"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_50"
+                android:id="@+id/new_title"
+                android:imeOptions="actionNext"
+                android:textColor="#8B8B8B"
+                android:textSize="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:hint="Title"
+                android:background="@drawable/edittext_bg"
+                android:layout_margin="@dimen/view_10"
+                android:padding="5dp"/>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/search_box"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:nestedScrollingEnabled="true"
+                android:hint="Description"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:id="@+id/description"
+                android:textSize="14dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="15dp"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/edittext_bg"
+                android:id="@+id/share_frame"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp"
+                    android:padding="5dp"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/share_pic"
+                    android:layout_gravity="center"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/share_layout"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="40dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/camera_icon"
+                        android:visibility="visible"
+                        android:id="@+id/deal_icon"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/deal_icon"
+                        android:textColor="#8B8B8B"
+                        android:id="@+id/deal_txt"
+                        android:visibility="visible"
+                        android:text="Add Picture"/>
+
+                </RelativeLayout>
+
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:weightSum="2">
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+               android:layout_weight="1"
+                android:background="@drawable/button_bg"
+                android:text="Select Subject"
+                android:textAllCaps="false"
+                android:layout_marginRight="4dp"
+                android:id="@+id/select_subject"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/button_bg"
+                android:text="Map"
+                android:textAllCaps="false"
+                android:id="@+id/onMap"
+                android:textColor="#fff"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button_bg"
+                android:text="Record Audio"
+                android:textAllCaps="false"
+                android:id="@+id/record"
+                android:textColor="#fff"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
